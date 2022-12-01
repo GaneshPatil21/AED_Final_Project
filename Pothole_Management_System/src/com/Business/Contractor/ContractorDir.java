@@ -15,4 +15,25 @@ public class ContractorDir {
     ngoDirectory= new ArrayList<>();
     }
     
+    //get Contractor directory
+
+    public ArrayList<Contractor> getNgoDirectory() {
+        return ngoDirectory;
+    }
+
+    public void setNgoDirectory(ArrayList<Contractor> ngoDirectory) {
+        this.ngoDirectory = ngoDirectory;
+    }
+    //add a Contractor
+    
+    //remove a Contractor
+    public void removeNGO(Contractor ngo){
+        ngoDirectory.remove(ngo);   
+    }
+    
+    public Contractor addNGO(){
+        Contractor ngo =new Contractor();
+        ngoDirectory.add(ngo);
+        return ngo;
+    }
 }
