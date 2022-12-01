@@ -18,5 +18,35 @@ public class Contractor {
         
     }
     
+    //get Contractor name
+    
+    public String getNgoName() {
+        return ngoName;
+    }
+
+    public void setNgoName(String ngoName) {
+        this.ngoName = ngoName;
+    }
+    
+    
+    
+    
+    
+    @Override
+    public String toString(){
+        
+        return ngoName;
+    }
+    
+    //get Contractor id
+    
+    public String getNgoId() {
+        return ngoId;
+    }
+
+    public void setNgoId(String ngoId) {
+        this.ngoId = ngoId;
+    }
+    
     
 }
