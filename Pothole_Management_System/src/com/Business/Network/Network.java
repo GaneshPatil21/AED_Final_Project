@@ -19,6 +19,24 @@ public class Network {
     
     //enterprise directory
 
+    public EnterpriseDir getEnterpriseDir() {
+        return enterpriseDir;
+    }
+
+    public String getNetworkName() {
+        return networkName;
+    }
     
+    //SetNEtwork NAme
+
+    public void setNetworkName(String networkName) {
+        this.networkName = networkName;
+    }
+    
+    @Override
+    public String toString()
+    {
+        return networkName;
+    }
 }
 
