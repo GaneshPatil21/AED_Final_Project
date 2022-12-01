@@ -37,7 +37,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         TitlePanel = new javax.swing.JPanel();
-        lblProjectTitle = new javax.swing.JLabel();
+        lblProjectTitlePotHole = new javax.swing.JLabel();
         btnLogout = new javax.swing.JButton();
         ContainerPanel = new javax.swing.JPanel();
         LoginPanel = new javax.swing.JPanel();
@@ -56,8 +56,8 @@ public class MainJFrame extends javax.swing.JFrame {
 
         TitlePanel.setBackground(new java.awt.Color(242, 227, 143));
 
-        lblProjectTitle.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
-        lblProjectTitle.setText("Pot Hole Management");
+        lblProjectTitlePotHole.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
+        lblProjectTitlePotHole.setText("Pot Hole Management");
 
         btnLogout.setText("Logout");
         btnLogout.addActionListener(new java.awt.event.ActionListener() {
@@ -71,9 +71,9 @@ public class MainJFrame extends javax.swing.JFrame {
         TitlePanelLayout.setHorizontalGroup(
             TitlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TitlePanelLayout.createSequentialGroup()
-                .addContainerGap(591, Short.MAX_VALUE)
-                .addComponent(lblProjectTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(429, 429, 429)
+                .addContainerGap(565, Short.MAX_VALUE)
+                .addComponent(lblProjectTitlePotHole, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(455, 455, 455)
                 .addComponent(btnLogout)
                 .addGap(21, 21, 21))
         );
@@ -81,8 +81,8 @@ public class MainJFrame extends javax.swing.JFrame {
             TitlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TitlePanelLayout.createSequentialGroup()
                 .addGap(12, 12, 12)
-                .addGroup(TitlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblProjectTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(TitlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblProjectTitlePotHole, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnLogout))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
@@ -238,7 +238,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private void btnSignUpMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSignUpMousePressed
         // TODO add your handling code here:
          SignUpJPanel panel = new SignUpJPanel();
-        lblProjectTitle.setText( "WELCOME NEW VOLUNTEER ORGANIZATION REGISTRATION!!!");
+        lblProjectTitlePotHole.setText( "WELCOME NEW VOLUNTEER ORGANIZATION REGISTRATION!!!");
             LoginPanel.setVisible(false);
             ContainerPanel.setVisible(true);
             TitlePanel.setVisible(true);
@@ -320,7 +320,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel btnSignUp;
     private javax.swing.JLabel lblLoginTitle;
     private javax.swing.JLabel lblPassword;
-    private javax.swing.JLabel lblProjectTitle;
+    private javax.swing.JLabel lblProjectTitlePotHole;
     private javax.swing.JLabel lblUserName;
     private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtUserName;
