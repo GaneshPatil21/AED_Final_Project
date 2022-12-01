@@ -4,7 +4,10 @@
  */
 package edu.userinterface;
 
+import edu.userinterface.UserRegistration.SignUpJPanel;
+import java.awt.CardLayout;
 import java.awt.Color;
+import static java.time.Clock.system;
 import javax.swing.BorderFactory;
 
 /**
@@ -243,6 +246,21 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void btnRegisterMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegisterMousePressed
         // TODO add your handling code here:
+        SignUpJPanel panel = new SignUpJPanel();
+        jLabel1.setText( "WELCOME NEW VOLUNTEER ORGANIZATION REGISTRATION!!!");
+        //emoRR panel = new demoRR(container, system);
+        //container.add("UserRegistrationJPanel", panel);
+            SignInPanel.setVisible(false);
+            ContainerPanel.setVisible(true);
+            TitlePanel.setVisible(true);
+            jButton1.setVisible(false);
+            userNameJTextField.setText("");
+            passwordField.setText("");
+        //cc();
+        //SystemAdminRole r = new SystemAdminRole();
+        ContainerPanel.add("workArea", panel);
+        CardLayout layout = (CardLayout) ContainerPanel.getLayout();
+            layout.next(ContainerPanel);
     }//GEN-LAST:event_btnRegisterMousePressed
 
     private void userNameJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userNameJTextFieldActionPerformed
