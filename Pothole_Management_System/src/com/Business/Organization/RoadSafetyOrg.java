@@ -5,35 +5,35 @@
  */
 package com.Business.Organization;
 
-import com.Business.RoadSafety.HospitalDir;
-import com.Business.Role.DoctorRole;
+import com.Business.RoadSafety.RoadSafetyDir;
+import com.Business.Role.RoadSafetyRole;
 import com.Business.Role.Role;
 import java.util.HashSet;
 
 //Doctor Oraganization 
-public class DoctorOrg extends Organization{
-    HospitalDir doctorList;
+public class RoadSafetyOrg extends Organization{
+    RoadSafetyDir doctorList;
     //constructor to add doctor list to hospital directory
-    public DoctorOrg()
+    public RoadSafetyOrg()
     {
         super(Organization.Type.Doctor.getValue());
-        doctorList= new HospitalDir();
+        doctorList= new RoadSafetyDir();
     }
 
-    public HospitalDir getHospitallist() {
+    public RoadSafetyDir getHospitallist() {
         return doctorList;
     }
     
     //setHospital List
 
-    public void setHospitallist(HospitalDir doctorList) {
+    public void setHospitallist(RoadSafetyDir doctorList) {
         this.doctorList = doctorList;
     }
     
     //hashmap to support doctor role
     @Override
     public HashSet<Role> getSupportedRole(){
-        role.add(new DoctorRole());
+        role.add(new RoadSafetyRole());
        return role;
     }
     
