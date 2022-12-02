@@ -6,13 +6,13 @@
 package com.Business.RoadSafety;
 
 
-public class Hospital {
+public class RoadSafety {
     private String doctorName;
     private String doctorId;
     private static int count=1;
     
     //Hospital constructor to generate id automatically
-    public Hospital() {
+    public RoadSafety() {
         
         
         doctorId="ORG"+(++count);
@@ -32,7 +32,7 @@ public class Hospital {
     }
 //set hopital count
     public static void setCount(int count) {
-        Hospital.count = count;
+        RoadSafety.count = count;
     }
     
     //get doctor ID
