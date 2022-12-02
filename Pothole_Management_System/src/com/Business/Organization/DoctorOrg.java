@@ -20,6 +20,16 @@ public class DoctorOrg extends Organization{
         doctorList= new HospitalDir();
     }
 
+    public HospitalDir getHospitallist() {
+        return doctorList;
+    }
+    
+    //setHospital List
+
+    public void setHospitallist(HospitalDir doctorList) {
+        this.doctorList = doctorList;
+    }
+    
     //hashmap to support doctor role
     @Override
     public HashSet<Role> getSupportedRole(){
