@@ -16,6 +16,29 @@ public class Employee {
         employeeId=count;
         count++;
     }
+    
+      public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
+    }
+    //get empid
+    public int getEmployeeId() {
+        return employeeId;
+    }
+
+    
+    
+    public String getEmployeeName() {
+        return employeeName;
+    }
+    
+    public void setEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
+    }
+
   
+    @Override
+    public String toString(){
+        return employeeName;
+    }
     
 }
