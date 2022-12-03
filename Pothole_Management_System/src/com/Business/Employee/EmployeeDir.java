@@ -18,4 +18,16 @@ public class EmployeeDir {
     }
 
    
+    //create a new employee using this method
+    public Employee createEmployee(String name){
+        Employee e= new Employee();
+        e.setEmployeeName(name);
+        empList.add(e);
+        return e;
+    }
+    
+    
+     public ArrayList<Employee> getEmpList() {
+        return empList;
+    }
 }
