@@ -34,10 +34,27 @@ public abstract class Organization {
         Doctor("Doctor"),
         Police("Police"),
         FireMan("FireMan");
-      
+        
+        private String value;
+        private Type(String value){
+            this.value = value;
+        }
+        public String getValue(){
+            return value;
+        }
     }
     //constructor to update work queues, employee directory and user account
-  
+    public Organization (String name)
+    {
+      this.name = name;
+      workQueue = new WorkQueue();
+      employeeDir = new EmployeeDir();
+      userAccountDir = new UserAccountDir();
+     
+      organizationCode = count;
+      role = new HashSet<>();
+      ++count;        
+    }
 
     
     //getSupported role
