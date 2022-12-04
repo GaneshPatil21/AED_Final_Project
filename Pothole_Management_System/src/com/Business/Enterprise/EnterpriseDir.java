@@ -20,6 +20,29 @@ private ArrayList<Enterprise> enterpriseList;
     public ArrayList<Enterprise> getEnterpriseList() {
         return enterpriseList;
     }
+    //Creaye and add new enterprises
+    public Enterprise createAndAddEnterprise(String name, Enterprise.EnterpriseType type){
+        Enterprise enterprise = null;
+        
+        //check type of Enterprise
+        if(type == Enterprise.EnterpriseType.Community){
+            enterprise = new CommunityEnt(name);
+            enterpriseList.add(enterprise);
+        }
+       
+         else if(type == Enterprise.EnterpriseType.NGO){
+            enterprise= new ContractorEnt(name);
+            enterpriseList.add(enterprise);
+         }
+         
+          else if(type == Enterprise.EnterpriseType.Provider){
+            enterprise= new SupplierEnt(name);
+            enterpriseList.add(enterprise);
+        }
+        return enterprise;
+        
+    }
+   
     
 }
 
