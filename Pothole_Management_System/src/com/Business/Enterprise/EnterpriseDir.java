@@ -39,6 +39,22 @@ private ArrayList<Enterprise> enterpriseList;
             enterprise= new SupplierEnt(name);
             enterpriseList.add(enterprise);
         }
+          
+          //check if enterrise is of type road safety
+           
+            else if(type == Enterprise.EnterpriseType.Hospital){
+            enterprise= new RoadSafetyEnt(name);
+            enterpriseList.add(enterprise);
+         } 
+            
+            else if(type == Enterprise.EnterpriseType.Police){
+            enterprise= new PoliceEnt(name);
+            enterpriseList.add(enterprise);
+         }
+            else if(type == Enterprise.EnterpriseType.FireMan){
+            enterprise= new FireManEnt(name);
+            enterpriseList.add(enterprise);
+         }
         return enterprise;
         
     }
