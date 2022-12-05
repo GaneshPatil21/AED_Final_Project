@@ -39,6 +39,29 @@ public abstract class Enterprise extends Organization {
             return value;
         }
         
+        @Override
+        public String toString()
+        {
+            return value;
+        }
+        
+        //Enterprise type to set 
+        
+        private EnterpriseType(String value)
+        {
+            this.value = value;
+        }
+     }
+     
+     //het orgaixation dir
+     
+     public OrganizationDir getOrganizationDir() {
+        return organizationDir;
+    }
+
+    public EnterpriseType getEnterpriseType() {
+        return enterpriseType;
+    }
 
     
 
