@@ -14,5 +14,10 @@ public class FireManEnt extends Enterprise{
     public FireManEnt(String name){
         super(name,Enterprise.EnterpriseType.FireMan);
     }
-
+    //hash map to for Fire Man role addition
+    @Override
+    public HashSet<Role> getSupportedRole(){
+        role.add(new FireManRole());
+        return role;
+    }
 }
