@@ -21,6 +21,53 @@ import javax.swing.table.DefaultTableModel;
  */
 public class ManageEmployee extends javax.swing.JPanel {
 
+     /**
+     * Creates new form ManageEnterprise
+     */
+    private OrganizationDir orgdirectory;
+    private JPanel userProcessContainer;
+    public ManageEmployee(JPanel userProcessContainer,OrganizationDir orgdirectory) {
+        initComponents();   
+        this.userProcessContainer=userProcessContainer;
+        this.orgdirectory=orgdirectory;
+        populateComboOrganization();
+        populateComboOrganizationEmp();
+    }
+    //populate event maker employee table by adding employees
+    private void populateTbl(Organization organization){
+        DefaultTableModel model = (DefaultTableModel) tblEmp.getModel();
+        
+        model.setRowCount(0);
+        
+        for (Employee employee : organization.getEmployeeDir().getEmpList()){
+            Object[] row = new Object[5];
+            row[0] = employee;
+            row[2] = employee.getEmployeeId();
+            row[1] = organization.getName();
+            model.addRow(row);
+        }
+    }
+    //populate organization combo box
+    public void populateComboOrganization(){
+        comboOrg.removeAllItems();
+        
+        for (Organization organization : orgdirectory.getOrganizationList()){
+            if(organization instanceof GovernmentOrg)
+            comboOrg.addItem(organization);
+            
+        }
+    }
+    //populate employee - event maker organization combo box
+    public void populateComboOrganizationEmp(){
+        comboOrgSelect.removeAllItems();
+        
+        for (Organization organization : orgdirectory.getOrganizationList()){
+             if(organization instanceof GovernmentOrg)
+            comboOrgSelect.addItem(organization);
+            
+        }
+    }
+
    
     /**
      * This method is called from within the constructor to initialize the form.
