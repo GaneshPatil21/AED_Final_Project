@@ -15,5 +15,11 @@ public class SupplierEnt extends Enterprise{
         super(name, Enterprise.EnterpriseType.Provider);
         
     } 
-
+    //hash map to for Provider role addition
+    @Override
+    public HashSet<Role> getSupportedRole(){
+        new SupplierManagerRole();
+        return role;
+        
+    }
 }
