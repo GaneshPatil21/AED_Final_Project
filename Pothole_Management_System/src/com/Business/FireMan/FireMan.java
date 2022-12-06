@@ -20,4 +20,49 @@ public class FireMan {
         workQueue= new WorkQueue();
     }
     
+    //get Count of FIreman
+    
+    public static int getCount() {
+        return Count;
+    }
+
+    
+
+   
+
+    public void setFireManId(String FireManId) {
+        this.FireManId = FireManId;
+    }
+    
+    public static void setCount(int Count) {
+        FireMan.Count = Count;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public WorkQueue getWorkQueue() {
+        return workQueue;
+    }
+    
+    //set workQueue
+
+    public void setWorkQueue(WorkQueue workQueue) {
+        this.workQueue = workQueue;
+    }
+    
+     public void setName(String Name) {
+        this.Name = Name;
+    }
+
+    public String getFireManId() {
+        return FireManId;
+    }
+       
+    
+        @Override
+    public String toString(){
+        return Name;
+    }
 }
