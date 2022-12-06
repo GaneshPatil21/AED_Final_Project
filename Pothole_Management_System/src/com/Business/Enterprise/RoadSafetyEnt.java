@@ -15,5 +15,12 @@ public class RoadSafetyEnt extends Enterprise{
         super(name,Enterprise.EnterpriseType.Hospital);
     }
     
-
+    @Override
+    public HashSet<Role> getSupportedRole(){
+       
+        role.add(new RoadSafetyRole());
+     
+        return role;
+        
+    }
 }
