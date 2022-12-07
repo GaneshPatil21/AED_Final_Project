@@ -21,6 +21,44 @@ public class Government {
         workQueue=new WorkQueue();
     }
      
+      public String getName() {
+        return name;
+    }
+      
+      //setName of eventmaker
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+   
+    
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+    
+    
+   
+
+     @Override
+     public String toString(){
+         return name;
+     }
+     
+     
+     
+      public WorkQueue getWorkQueue() {
+        return workQueue;
+    }
+
+    public void setWorkQueue(WorkQueue workQueue) {
+        this.workQueue = workQueue;
+    }
+     
     
 }
 
