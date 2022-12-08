@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author ymayank97
+ * @author ganesh
  */
 public class SystemAdminDashboard extends javax.swing.JPanel {
 

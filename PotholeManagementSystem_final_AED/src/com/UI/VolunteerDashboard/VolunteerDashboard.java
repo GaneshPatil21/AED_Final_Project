@@ -40,7 +40,7 @@ import com.googlemaps.Marker;
 
 /**
  *
- * @author vidhi
+ * @author shardul
  */
 public class VolunteerDashboard extends javax.swing.JPanel {
 

@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author ymayank97
+ * @author ganesh
  */
 public class PoliceDashboard extends javax.swing.JPanel {
     private JPanel userProcessContainer;

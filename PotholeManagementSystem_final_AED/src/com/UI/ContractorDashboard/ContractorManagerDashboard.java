@@ -32,7 +32,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
 
 /**
  *
- * @author ymayank97
+ * @author ganesh
  */
 public class ContractorManagerDashboard extends javax.swing.JPanel {
 

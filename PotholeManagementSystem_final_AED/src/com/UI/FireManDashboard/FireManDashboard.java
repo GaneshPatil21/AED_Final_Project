@@ -20,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author ymayank97
+ * @author ganesh
  */
 public class FireManDashboard extends javax.swing.JPanel {
     private JPanel userProcessContainer;

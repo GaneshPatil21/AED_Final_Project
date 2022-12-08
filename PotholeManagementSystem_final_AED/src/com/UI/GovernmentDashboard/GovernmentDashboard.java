@@ -28,7 +28,7 @@ import com.teamdev.jxbrowser.view.swing.BrowserView;
 
 /**
  *
- * @author ymayank97
+ * @author ganesh
  */
 public class GovernmentDashboard extends javax.swing.JPanel {
 

@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author vidhi
+ * @author shardul
  */
 public class WorkerAdminDashboard extends javax.swing.JPanel {
 

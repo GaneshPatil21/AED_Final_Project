@@ -22,7 +22,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author vidhi
+ * @author shardul
  */
 public class SupplierDashboard extends javax.swing.JPanel {
 

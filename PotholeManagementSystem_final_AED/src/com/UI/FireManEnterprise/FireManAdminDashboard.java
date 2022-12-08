@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author ymayank97
+ * @author ganesh
  */
 public class FireManAdminDashboard extends javax.swing.JPanel {
 

@@ -9,7 +9,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author vidhi
+ * @author shardul
  */
 public class VolunteerWorkReq extends WorkReq{
     private String Description;
