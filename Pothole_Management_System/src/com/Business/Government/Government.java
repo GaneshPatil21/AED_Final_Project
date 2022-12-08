@@ -20,7 +20,7 @@ public class Government {
         id= "EM"+(++count);
         workQueue=new WorkQueue();
     }
-     
+    
       public String getName() {
         return name;
     }
