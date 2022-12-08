@@ -20,5 +20,30 @@ private ArrayList<Government> eventMakerDirectory;
 
     
 
+    public void setChangeMakerDirectory(ArrayList<Government> changeMakerDirectory) {
+        this.eventMakerDirectory = changeMakerDirectory;
+    }
+    
+    //add an event maker
+    public Government addChangeMaker(){
+        Government cm = new Government();
+        eventMakerDirectory.add(cm);
+        return cm;
+    }
+    //remove an event maker
+   
+    
+    public ArrayList<Government> getChangeMakerDirectory() {
+        return eventMakerDirectory;
+    }
+    
+    
+    //
+    
+    
+     public void removeChangeMaker(Government cm){
+        eventMakerDirectory.remove(cm);
+    }
+    
 }
 
