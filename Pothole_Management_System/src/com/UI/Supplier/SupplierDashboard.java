@@ -36,65 +36,65 @@ public class SupplierDashboard extends javax.swing.JPanel {
     private Ecosystem system;
     private Supplier p;
     
-    public SupplierDashboard(JPanel userProcessContainer,UserAccount account,Organization organization,Enterprise enterprise,Ecosystem system) {
-        initComponents();
-        this.userProcessContainer=userProcessContainer;
-        this.account=account;
-        this.organization=organization;
-        this.enterprise=enterprise;
-        this.system=system;
-       
-          for (Supplier provider : ((SupplierOrg)organization).getProviderList().getProviderList()) {
-            if (account.getEmployee().getEmployeeName().equals(provider.getSupplierName())) {
-                 p=provider;
-            }
-        }
+            public SupplierDashboard(JPanel userProcessContainer,UserAccount account,Organization organization,Enterprise enterprise,Ecosystem system) {
+                initComponents();
+                this.userProcessContainer=userProcessContainer;
+                this.account=account;
+                this.organization=organization;
+                this.enterprise=enterprise;
+                this.system=system;
+            
+                for (Supplier provider : ((SupplierOrg)organization).getProviderList().getProviderList()) {
+                    if (account.getEmployee().getEmployeeName().equals(provider.getSupplierName())) {
+                        p=provider;
+                    }
+                }
 
-        if (p.getWorkQueue() == null) {
-            WorkQueue w = new WorkQueue();
-            p.setWorkQueue(w);
-        }
-        populateTableSupply();
-        populateTableCreate();
-    }
-    //provide the required supplies on request table
-    public void populateTableSupply()
-    {
-        DefaultTableModel model = (DefaultTableModel) tblProvideReq.getModel();
-        
-        model.setRowCount(0);
-        
-        
-        for (WorkReq work : system.getWorkQueue().getWorkRequestList()){
-           if(work instanceof SupplierWorkReq){ 
-            Object[] row = new Object[10];
-            row[0] = ((SupplierWorkReq) work).getRtype();
-            row[1] = ((SupplierWorkReq) work).getReq();
-            row[2] = ((SupplierWorkReq) work).getQuantity();
-            row[3] = work;
-            row[4] = work.getSender();
-           
-            
-            model.addRow(row);
-           }
-        }
-    }
-    //create supply request
-    public void populateTableCreate(){
-        
-            DefaultTableModel model = (DefaultTableModel) tblCreate.getModel();
-        
-            model.setRowCount(0);
-            for(Item item: p.getItemDir().getSupplyList()){
-            Object[] row = new Object[10];
-            row[0] = item.getRequirementType();
-            row[1] = item.getRequirement();
-            row[2] = item.getQuantity();
-            model.addRow(row);
+                if (p.getWorkQueue() == null) {
+                    WorkQueue w = new WorkQueue();
+                    p.setWorkQueue(w);
+                }
+                populateTableSupply();
+                populateTableCreate();
+            }
+            //provide the required supplies on request table
+            public void populateTableSupply()
+            {
+                DefaultTableModel model = (DefaultTableModel) tblProvideReq.getModel();
+                
+                model.setRowCount(0);
+                
+                
+                for (WorkReq work : system.getWorkQueue().getWorkRequestList()){
+                if(work instanceof SupplierWorkReq){ 
+                    Object[] row = new Object[10];
+                    row[0] = ((SupplierWorkReq) work).getRtype();
+                    row[1] = ((SupplierWorkReq) work).getReq();
+                    row[2] = ((SupplierWorkReq) work).getQuantity();
+                    row[3] = work;
+                    row[4] = work.getSender();
+                
+                    
+                    model.addRow(row);
+                }
+                }
+            }
+            //create supply request
+            public void populateTableCreate(){
+                
+                    DefaultTableModel model = (DefaultTableModel) tblCreate.getModel();
+                
+                    model.setRowCount(0);
+                    for(Item item: p.getItemDir().getSupplyList()){
+                    Object[] row = new Object[10];
+                    row[0] = item.getRequirementType();
+                    row[1] = item.getRequirement();
+                    row[2] = item.getQuantity();
+                    model.addRow(row);
+                    }
+                    
             }
             
-    }
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
