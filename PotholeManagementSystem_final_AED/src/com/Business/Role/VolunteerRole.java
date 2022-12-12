@@ -23,7 +23,7 @@ public class VolunteerRole extends Role{
         @Override
         public String toString()
 {
-   return Role.RoleType.Volunteer.getValue();
+   return Role.RoleType.VolunteerRole.getValue();
 }
 
 }

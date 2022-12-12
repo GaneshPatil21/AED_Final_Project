@@ -123,7 +123,7 @@ public class PoliceDashboard extends javax.swing.JPanel {
 
         btnComplete.setFont(new java.awt.Font("Zapf Dingbats", 0, 18)); // NOI18N
         btnComplete.setForeground(new java.awt.Color(204, 0, 0));
-        btnComplete.setText("Responded");
+        btnComplete.setText("Mark Complete");
         btnComplete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCompleteActionPerformed(evt);

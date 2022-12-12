@@ -117,6 +117,7 @@ public class GovernmentDashboard extends javax.swing.JPanel {
         btnFire = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(204, 204, 255));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(102, 102, 255));
 
@@ -141,6 +142,8 @@ public class GovernmentDashboard extends javax.swing.JPanel {
                 .addComponent(jLabel1))
         );
 
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 1897, -1));
+
         btnView.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         btnView.setForeground(new java.awt.Color(153, 0, 153));
         btnView.setText("View");
@@ -149,6 +152,7 @@ public class GovernmentDashboard extends javax.swing.JPanel {
                 btnViewActionPerformed(evt);
             }
         });
+        add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(1540, 130, 166, -1));
 
         btnAssignTo.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         btnAssignTo.setForeground(new java.awt.Color(153, 0, 153));
@@ -158,6 +162,7 @@ public class GovernmentDashboard extends javax.swing.JPanel {
                 btnAssignToActionPerformed(evt);
             }
         });
+        add(btnAssignTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1540, 190, 166, -1));
 
         btnComplete.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         btnComplete.setForeground(new java.awt.Color(153, 0, 153));
@@ -167,6 +172,7 @@ public class GovernmentDashboard extends javax.swing.JPanel {
                 btnCompleteActionPerformed(evt);
             }
         });
+        add(btnComplete, new org.netbeans.lib.awtextra.AbsoluteConstraints(1540, 260, 166, -1));
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "View", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 0, 24), new java.awt.Color(153, 0, 153))); // NOI18N
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -184,11 +190,9 @@ public class GovernmentDashboard extends javax.swing.JPanel {
 
         txtSubject.setEditable(false);
         txtSubject.setFont(new java.awt.Font("Segoe UI", 0, 28)); // NOI18N
-        txtSubject.setForeground(new java.awt.Color(153, 0, 153));
 
         txtLoc.setEditable(false);
         txtLoc.setFont(new java.awt.Font("Segoe UI", 0, 28)); // NOI18N
-        txtLoc.setForeground(new java.awt.Color(153, 0, 153));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(153, 0, 153));
@@ -237,10 +241,11 @@ public class GovernmentDashboard extends javax.swing.JPanel {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(25, 25, 25)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtLoc, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnViewMap, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnViewMap, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtLoc, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(25, 25, 25)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -252,6 +257,8 @@ public class GovernmentDashboard extends javax.swing.JPanel {
                     .addComponent(displayImage, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
+
+        add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, -1, -1));
 
         tblEvent.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         tblEvent.setModel(new javax.swing.table.DefaultTableModel(
@@ -276,6 +283,8 @@ public class GovernmentDashboard extends javax.swing.JPanel {
             }
         });
         jScrollPane1.setViewportView(tblEvent);
+
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 1302, 250));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Forward  To", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 0, 24), new java.awt.Color(153, 0, 153))); // NOI18N
         jPanel4.setOpaque(false);
@@ -306,6 +315,8 @@ public class GovernmentDashboard extends javax.swing.JPanel {
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
+        add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1460, 340, -1, -1));
+
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Other Services", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 0, 24), new java.awt.Color(153, 0, 153))); // NOI18N
         jPanel3.setOpaque(false);
 
@@ -320,7 +331,7 @@ public class GovernmentDashboard extends javax.swing.JPanel {
 
         btnHealth.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btnHealth.setForeground(new java.awt.Color(153, 0, 153));
-        btnHealth.setText("Health Department");
+        btnHealth.setText("Road Safety Department");
         btnHealth.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnHealthActionPerformed(evt);
@@ -345,7 +356,7 @@ public class GovernmentDashboard extends javax.swing.JPanel {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnFire, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(btnHealth, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 287, Short.MAX_VALUE)
+                        .addComponent(btnHealth, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnPolice, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
@@ -361,56 +372,7 @@ public class GovernmentDashboard extends javax.swing.JPanel {
                 .addGap(24, 24, 24))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane1)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(133, 133, 133)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnView, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnComplete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnAssignTo, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 115, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(113, 113, 113))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(70, 70, 70)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(51, 51, 51)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnView)
-                        .addGap(30, 30, 30)
-                        .addComponent(btnAssignTo)
-                        .addGap(27, 27, 27)
-                        .addComponent(btnComplete)
-                        .addGap(59, 59, 59)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(39, 39, 39)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(247, Short.MAX_VALUE))
-        );
+        add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1460, 500, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
     //assign the request to me
     private void btnAssignToActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignToActionPerformed
@@ -499,6 +461,8 @@ public class GovernmentDashboard extends javax.swing.JPanel {
             tempList.add("Contractor");
             cswr.setStatusList(tempList);
             populateTableWorkQueue();
+            JOptionPane.showMessageDialog(null, "Assigned to the Contractor");
+            //JOptionPane.showMessageDialog(null, "Assigned to the Contractor", "Warning", JOptionPane.WARNING_MESSAGE);
             }
             else{
                 JOptionPane.showMessageDialog(null, "Already Completed", "Warning", JOptionPane.WARNING_MESSAGE);
@@ -548,7 +512,8 @@ public class GovernmentDashboard extends javax.swing.JPanel {
             }
             else{
                if(!cswr.getStatus().equalsIgnoreCase("Completed")){ 
-            JOptionPane.showMessageDialog(null, "Assigned to the Police", "Warning", JOptionPane.WARNING_MESSAGE);
+            //JOptionPane.showMessageDialog(null, "Assigned to the Police", "Warning", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Assigned to the Police Department");
             cswr.setStatus("Assigned To Police");
             ArrayList<String> tempList = cswr.getStatusList();
             tempList.add("Police");
@@ -576,7 +541,8 @@ public class GovernmentDashboard extends javax.swing.JPanel {
             else{
                 if(!cswr.getStatus().equalsIgnoreCase("Completed")){ 
                    
-                JOptionPane.showMessageDialog(null, "Assigned to the FireMan", "Warning", JOptionPane.WARNING_MESSAGE);
+                //JOptionPane.showMessageDialog(null, "Assigned to the FireMan", "Warning", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Assigned to the FireMan");
                 cswr.setStatus("Assigned To FireMan");
                 ArrayList<String> tempList = cswr.getStatusList();
                 tempList.add("FireMan");

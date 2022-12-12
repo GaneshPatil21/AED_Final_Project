@@ -168,14 +168,12 @@ public class ManageUserAccount extends javax.swing.JPanel {
         jLabel2.setText("Username");
 
         txtName.setFont(new java.awt.Font("Zapf Dingbats", 0, 18)); // NOI18N
-        txtName.setForeground(new java.awt.Color(204, 51, 0));
 
         jLabel3.setFont(new java.awt.Font("Zapf Dingbats", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(204, 51, 0));
         jLabel3.setText("Organization");
 
         comboOrg.setFont(new java.awt.Font("Zapf Dingbats", 0, 18)); // NOI18N
-        comboOrg.setForeground(new java.awt.Color(204, 51, 0));
         comboOrg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboOrgActionPerformed(evt);
@@ -183,7 +181,6 @@ public class ManageUserAccount extends javax.swing.JPanel {
         });
 
         txtPassword.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        txtPassword.setForeground(new java.awt.Color(153, 0, 153));
 
         lblPassword.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         lblPassword.setForeground(new java.awt.Color(204, 0, 51));
@@ -194,14 +191,12 @@ public class ManageUserAccount extends javax.swing.JPanel {
         jLabel4.setText("Employee");
 
         comboEmp.setFont(new java.awt.Font("Zapf Dingbats", 0, 18)); // NOI18N
-        comboEmp.setForeground(new java.awt.Color(204, 0, 51));
 
         jLabel5.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(204, 51, 0));
         jLabel5.setText("Role");
 
         comboRole.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        comboRole.setForeground(new java.awt.Color(153, 0, 153));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -209,14 +204,13 @@ public class ManageUserAccount extends javax.swing.JPanel {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel4Layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(lblPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel4Layout.createSequentialGroup()
-                            .addGap(40, 40, 40)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(lblPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
                                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)

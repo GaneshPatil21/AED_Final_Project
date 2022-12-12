@@ -133,7 +133,6 @@ public class ManageOrganization extends javax.swing.JPanel {
         jLabel2.setText("Name");
 
         txtName.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        txtName.setForeground(new java.awt.Color(153, 0, 153));
         txtName.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtNameKeyTyped(evt);

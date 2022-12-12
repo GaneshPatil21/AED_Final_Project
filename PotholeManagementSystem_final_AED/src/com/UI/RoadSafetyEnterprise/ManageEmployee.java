@@ -194,7 +194,7 @@ public class ManageEmployee extends javax.swing.JPanel {
         );
 
         btnBack.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/CommunityEnterprise/back.png"))); // NOI18N
+        btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/backButtonRegister.png"))); // NOI18N
         btnBack.setBorderPainted(false);
         btnBack.setContentAreaFilled(false);
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -208,7 +208,6 @@ public class ManageEmployee extends javax.swing.JPanel {
         jLabel5.setText("Organization");
 
         comboOrg.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
-        comboOrg.setForeground(new java.awt.Color(153, 0, 153));
         comboOrg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboOrgActionPerformed(evt);

@@ -73,7 +73,7 @@ public class SupplierDashboard extends javax.swing.JPanel {
             row[2] = ((SupplierWorkReq) work).getQuantity();
             row[3] = work;
             row[4] = work.getSender();
-           
+            
             
             model.addRow(row);
            }
@@ -138,11 +138,11 @@ public class SupplierDashboard extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Request Type", "Requirements", "Quantity", "Date", "Status", "Source"
+                "Request Type", "Requirements", "Quantity", "Status", "Source"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false
+                false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -196,51 +196,27 @@ public class SupplierDashboard extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "To allocate the account, please choose the row", "Warning", JOptionPane.WARNING_MESSAGE);
         } else {
 
+            JOptionPane.showMessageDialog(null, "You have completed the request successfully");
             SupplierWorkReq pwr = (SupplierWorkReq) tblProvideReq.getValueAt(selectedRow, 3);
             if (pwr.getReciever() != null) {
-                if (pwr.getStatus().equals("Pending")) {
-//                    UserAccount a = pwr.getSender();
-//                    int temp = 0;
-//                    if (p.getItemDirectory().getSupplyList().size() <= 0) {
-//                        JOptionPane.showMessageDialog(null, "No Stock available. Request from Provider");
-//                        return;
-//                    }
-//                    for (Item item : p.getItemDirectory().getSupplyList()) {
-//                       
-//                        if (pwr.getReq().equals(item.getRequirement())&& pwr.getRtype().equals(item.getRequirementType())) {
-//                            
-//                            if (item.getQuantity() - pwr.getQuantity() < 0) {
-//                                JOptionPane.showMessageDialog(null, "Not enough supply. Wait for sometime");
-//                                return;
-//                            }
-//                            item.setQuantity(item.getQuantity() - pwr.getQuantity());
-//                           temp = 1;
-//                        }   
-//                    }
-//                   
-//                    if(temp==1){
+                pwr.setStatus("Complete");
+            }
+            
+//            SupplierWorkReq pwr = (SupplierWorkReq) tblProvideReq.getValueAt(selectedRow, 3);
+//            if (pwr.getReciever() != null) {
+//                if (pwr.getStatus().equals("Pending")) {
+//
 //                    pwr.setStatus("Complete");
 //                    JOptionPane.showMessageDialog(null, "You have completed the request successfully");
-//                    }else{
-//                    pwr.setStatus("Requested");   
-//                    JOptionPane.showMessageDialog(null, "No Stock Available, Request Failed !!","Warning",JOptionPane.WARNING_MESSAGE);
-//                    }
 //                    populateTableSupply();
-//                    populateTableCreate();
-
-
-                    pwr.setStatus("Complete");
-                    JOptionPane.showMessageDialog(null, "You have completed the request successfully");
-                    populateTableSupply();
-//                    populateTableCreate();
-
-                } else {
-                    JOptionPane.showMessageDialog(null, "You cannot complete it two times.","Warning",JOptionPane.WARNING_MESSAGE);
-                }
-            } else {
-                JOptionPane.showMessageDialog(null, "Please assign first","Warning",JOptionPane.WARNING_MESSAGE);
-            }
-        
+////                    populateTableCreate();
+//
+//                } else {
+//                    JOptionPane.showMessageDialog(null, "You cannot complete it two times.","Warning",JOptionPane.WARNING_MESSAGE);
+//                }
+//            } else {
+//                JOptionPane.showMessageDialog(null, "Please assign first","Warning",JOptionPane.WARNING_MESSAGE);
+//            }     
     }//GEN-LAST:event_btnCompleteActionPerformed
     }
 

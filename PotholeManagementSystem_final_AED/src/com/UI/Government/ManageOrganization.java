@@ -132,7 +132,6 @@ public class ManageOrganization extends javax.swing.JPanel {
         jLabel2.setText("Name");
 
         txtName.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
-        txtName.setForeground(new java.awt.Color(204, 0, 0));
         txtName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNameActionPerformed(evt);
@@ -149,7 +148,6 @@ public class ManageOrganization extends javax.swing.JPanel {
         jLabel3.setText("Organization Type");
 
         comboOrg.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        comboOrg.setForeground(new java.awt.Color(204, 0, 0));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);

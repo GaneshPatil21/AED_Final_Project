@@ -173,14 +173,12 @@ public class ManageUserAccount extends javax.swing.JPanel {
         jLabel2.setText("Username");
 
         txtName.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
-        txtName.setForeground(new java.awt.Color(255, 51, 51));
 
         jLabel3.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 51, 51));
         jLabel3.setText("Organization");
 
         comboOrg.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
-        comboOrg.setForeground(new java.awt.Color(255, 0, 0));
         comboOrg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboOrgActionPerformed(evt);
@@ -188,7 +186,6 @@ public class ManageUserAccount extends javax.swing.JPanel {
         });
 
         txtPassword.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
-        txtPassword.setForeground(new java.awt.Color(255, 0, 0));
         txtPassword.setSelectionColor(new java.awt.Color(0, 0, 0));
 
         lblPassword.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
@@ -200,14 +197,17 @@ public class ManageUserAccount extends javax.swing.JPanel {
         jLabel4.setText("Employee");
 
         comboEmp.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
-        comboEmp.setForeground(new java.awt.Color(255, 51, 51));
 
         jLabel5.setFont(new java.awt.Font("Telugu MN", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 0, 51));
         jLabel5.setText("Role");
 
         comboRole.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
-        comboRole.setForeground(new java.awt.Color(255, 51, 51));
+        comboRole.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboRoleActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -363,6 +363,10 @@ public class ManageUserAccount extends javax.swing.JPanel {
             populateComboRole(enterprise);
         }
     }//GEN-LAST:event_comboOrgActionPerformed
+
+    private void comboRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboRoleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboRoleActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -22,7 +22,7 @@ public class VolunteerAdminRole extends Role{
         @Override
         public String toString()
 {
-   return Role.RoleType.VolunteerAdmin.getValue();
+   return Role.RoleType.VolunteerAdminRole.getValue();
 }
 
 }

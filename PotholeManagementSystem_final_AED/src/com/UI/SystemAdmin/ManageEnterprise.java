@@ -157,7 +157,6 @@ public class ManageEnterprise extends javax.swing.JPanel {
         jLabel2.setText("Network ");
 
         txtName.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
-        txtName.setForeground(new java.awt.Color(255, 51, 51));
         txtName.setBorder(null);
         txtName.setSelectionColor(new java.awt.Color(0, 153, 153));
 

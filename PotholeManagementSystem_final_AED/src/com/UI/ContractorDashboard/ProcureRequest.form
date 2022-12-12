@@ -283,13 +283,16 @@
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="5">
                 <StringItem index="0" value="None"/>
-                <StringItem index="1" value="Food"/>
-                <StringItem index="2" value="Clothes"/>
-                <StringItem index="3" value="Medicine"/>
-                <StringItem index="4" value="Education"/>
+                <StringItem index="1" value="Barricades"/>
+                <StringItem index="2" value="Sand"/>
+                <StringItem index="3" value="Stoppers"/>
+                <StringItem index="4" value="Others"/>
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboTypeActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value=""/>
           </AuxValues>

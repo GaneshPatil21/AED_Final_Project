@@ -165,7 +165,6 @@ public class ManageUserAccount extends javax.swing.JPanel {
         jLabel2.setText("Username");
 
         txtName.setFont(new java.awt.Font("Zapf Dingbats", 0, 18)); // NOI18N
-        txtName.setForeground(new java.awt.Color(204, 0, 0));
 
         jLabel3.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(204, 0, 0));
@@ -179,7 +178,6 @@ public class ManageUserAccount extends javax.swing.JPanel {
         });
 
         txtPassword.setFont(new java.awt.Font("Zapf Dingbats", 0, 18)); // NOI18N
-        txtPassword.setForeground(new java.awt.Color(204, 0, 0));
 
         lblPassword.setFont(new java.awt.Font("Zapf Dingbats", 0, 18)); // NOI18N
         lblPassword.setForeground(new java.awt.Color(204, 0, 0));

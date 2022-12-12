@@ -23,7 +23,7 @@ public class GovernmentRole extends Role{
         @Override
         public String toString()
 {
-   return Role.RoleType.Government.getValue();
+   return Role.RoleType.GovernmentRole.getValue();
 }
 
 }

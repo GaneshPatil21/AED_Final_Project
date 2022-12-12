@@ -149,7 +149,6 @@ public class ManageEmployee extends javax.swing.JPanel {
         jLabel2.setText("Name");
 
         txtName.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
-        txtName.setForeground(new java.awt.Color(153, 0, 153));
         txtName.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtNameKeyTyped(evt);
@@ -161,7 +160,6 @@ public class ManageEmployee extends javax.swing.JPanel {
         jLabel3.setText("Organization");
 
         comboOrgSelect.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
-        comboOrgSelect.setForeground(new java.awt.Color(153, 0, 153));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -214,7 +212,6 @@ public class ManageEmployee extends javax.swing.JPanel {
         jLabel5.setText("Organization");
 
         comboOrg.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
-        comboOrg.setForeground(new java.awt.Color(204, 51, 0));
         comboOrg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboOrgActionPerformed(evt);

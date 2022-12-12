@@ -147,7 +147,6 @@ public class ManageEmployee extends javax.swing.JPanel {
         jLabel2.setText("Name");
 
         txtName.setFont(new java.awt.Font("Zapf Dingbats", 0, 18)); // NOI18N
-        txtName.setForeground(new java.awt.Color(204, 0, 0));
         txtName.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtNameKeyTyped(evt);

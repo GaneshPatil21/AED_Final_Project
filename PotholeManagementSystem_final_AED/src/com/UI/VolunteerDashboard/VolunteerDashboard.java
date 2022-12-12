@@ -147,7 +147,7 @@ public class VolunteerDashboard extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Victim Name", "Subject", "Description", "Location", "Date", "Status", "Event Maker"
+                "Title", "Subject", "Description", "Location", "Date", "Status", "Completer"
             }
         ));
         jScrollPane1.setViewportView(tblEvent);
@@ -166,10 +166,8 @@ public class VolunteerDashboard extends javax.swing.JPanel {
         jScrollPane2.setViewportView(txtDesc);
 
         txtSubject.setFont(new java.awt.Font("Zapf Dingbats", 0, 24)); // NOI18N
-        txtSubject.setForeground(new java.awt.Color(204, 0, 51));
 
         txtLoc.setFont(new java.awt.Font("Zapf Dingbats", 0, 24)); // NOI18N
-        txtLoc.setForeground(new java.awt.Color(204, 0, 0));
 
         jLabel2.setFont(new java.awt.Font("Zapf Dingbats", 0, 20)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(204, 51, 0));
@@ -222,25 +220,22 @@ public class VolunteerDashboard extends javax.swing.JPanel {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(37, 37, 37)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtSubject)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(txtLoc, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnSetMapPointer))
-                            .addComponent(jScrollPane2)))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addComponent(txtSubject, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                        .addComponent(txtLoc, javax.swing.GroupLayout.DEFAULT_SIZE, 253, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnSetMapPointer))
+                    .addComponent(jScrollPane2))
+                .addGap(33, 33, 33)
                 .addComponent(imgLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 596, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton2)
@@ -400,7 +395,7 @@ public class VolunteerDashboard extends javax.swing.JPanel {
         Image img = imgRaw.getImage();
         
         //Scale the image
-        Image imgScaled = img.getScaledInstance(200,250, java.awt.Image.SCALE_SMOOTH);
+        Image imgScaled = img.getScaledInstance(600,260, java.awt.Image.SCALE_SMOOTH);
         ImageIcon imgProfile = new ImageIcon(imgScaled);
         this.imageIcon = imgProfile;
         imgLabel.setIcon(imgProfile);

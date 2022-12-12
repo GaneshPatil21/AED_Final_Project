@@ -164,14 +164,12 @@ public class ManageUserAccount extends javax.swing.JPanel {
         jLabel2.setText("Username");
 
         txtName.setFont(new java.awt.Font("Zapf Dingbats", 0, 18)); // NOI18N
-        txtName.setForeground(new java.awt.Color(204, 0, 51));
 
         jLabel3.setFont(new java.awt.Font("Zapf Dingbats", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(204, 0, 51));
         jLabel3.setText("Organization");
 
         comboOrg.setFont(new java.awt.Font("Zapf Dingbats", 0, 18)); // NOI18N
-        comboOrg.setForeground(new java.awt.Color(204, 0, 51));
         comboOrg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboOrgActionPerformed(evt);
@@ -179,7 +177,6 @@ public class ManageUserAccount extends javax.swing.JPanel {
         });
 
         txtPassword.setFont(new java.awt.Font("Zapf Dingbats", 0, 18)); // NOI18N
-        txtPassword.setForeground(new java.awt.Color(153, 0, 153));
 
         lblPassword.setFont(new java.awt.Font("Zapf Dingbats", 0, 18)); // NOI18N
         lblPassword.setForeground(new java.awt.Color(204, 0, 0));
@@ -231,9 +228,9 @@ public class ManageUserAccount extends javax.swing.JPanel {
                     .addComponent(comboOrg, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboEmp, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(comboEmp, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(comboRole, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)

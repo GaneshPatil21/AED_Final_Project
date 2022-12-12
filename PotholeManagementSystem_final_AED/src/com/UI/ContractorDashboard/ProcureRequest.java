@@ -172,7 +172,12 @@ public class ProcureRequest extends javax.swing.JPanel {
 
         comboType.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         comboType.setForeground(new java.awt.Color(153, 0, 153));
-        comboType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "None", "Food", "Clothes", "Medicine", "Education" }));
+        comboType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "None", "Barricades", "Sand", "Stoppers", "Others" }));
+        comboType.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboTypeActionPerformed(evt);
+            }
+        });
 
         btnSubmit.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnSubmit.setForeground(new java.awt.Color(255, 0, 51));
@@ -333,6 +338,10 @@ public class ProcureRequest extends javax.swing.JPanel {
                 evt.consume();
         }
     }//GEN-LAST:event_txtQntKeyTyped
+
+    private void comboTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboTypeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboTypeActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
