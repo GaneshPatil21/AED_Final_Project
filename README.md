@@ -7,6 +7,15 @@ Contributers :
 2.Shubham Sharad Bagal (002708621) - bagal.sh@northeastern.edu
 3.Shardul Pravin Surve (002791555) - surve.sha@northeastern.edu
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Cause of the Project -
+
+A pothole is basically a depression on any road surface or any plain ground too. Potholes are areas of road surface that have cracked, eroded and eventually form a hole. They start out as tiny cracks.
+
+Global terrorist attacks killed 5,226 in 2021, In the same year, approximately 15,000 (USA), 1,390 (UK), 3565 (India), 431 (Russia), were killed due to pothole (Poor road maintenance), just the total of the mentioned countries is 4 fold greater than the killings by terrorism.
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ABOUT PACKAGE
@@ -24,6 +33,7 @@ We have created a Pothole Management System that includes multiple Eterprises - 
 5. RoadSafety has Doctor
 
 All of these enterprises are part of a network  which is defined by a City Name such as Boston , Los Angeles
+
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
