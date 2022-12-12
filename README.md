@@ -1,1 +1,39 @@
 # AED_Final_Project
+Title : Pothole Management System
+
+Contributers : 
+
+1.Ganesh Patil (002770627) - patil.gan@northeastern.edu
+2.Shubham Sharad Bagal (002708621) - bagal.sh@northeastern.edu
+3.Shardul Pravin Surve (002791555) - surve.sha@northeastern.edu
+
+We have created a Pothole Management System that includes multiple Eterprises - Community , Contractor ,Fire-Man ,Police ,RoadSafety, Supplier. Each of these have sepearate oraganizations under them as below - 
+
+1. Community has  Volunteer
+2. Contractor has Workers
+3. Fire-Man has employees,
+4. Police has policemen,
+5. RoadSafety has Doctor
+
+All of these enterprises are part of a network  which is defined by a City Name such as Boston , Los Angeles
+
+Workflow - 
+
+1. The Admin logs in using 'admin' as username and password.
+2. Admin Creates etwork
+
+Below are few Screen Shots of the application - 
+
+1.![Screenshot 2022-12-10 231852](https://user-images.githubusercontent.com/113263274/206954541-5efb2b71-0580-4592-aa6f-b28d70ea1085.png)
+2. ![Screenshot 2022-12-10 232105](https://user-images.githubusercontent.com/113263274/206954608-ed82ff2b-7413-49cf-94f1-06375f25eb30.png)
+3. ![Screenshot 2022-12-10 231919](https://user-images.githubusercontent.com/113263274/206954624-dfc69be4-a448-411f-9a02-b22cc3200dae.png)
+4. ![Screenshot 2022-12-10 231852](https://user-images.githubusercontent.com/113263274/206954637-1de1b6a6-3cbd-4732-96a4-a692ef4987d9.png)
+5. ![Screenshot 2022-12-10 231821](https://user-images.githubusercontent.com/113263274/206954654-65f82ee2-db8b-43a0-aafe-5309341e3655.png)
+
+
+
+
+
+
+
+
